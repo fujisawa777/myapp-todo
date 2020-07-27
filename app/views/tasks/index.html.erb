@@ -1,0 +1,23 @@
+<div class="mx-auto" style="width: 200px;">
+<h1>Task list</h1>
+</div>
+<h2><%= link_to 'Creat new Todo', new_task_path ,class: 'btn btn-info'%></h2>
+<table class="table">
+  <thead>
+    <tr>
+    <th>タスク</th>
+    <th>編集</th>
+    <th>削除</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <% @tasks.each do |task| %>
+    <tr>
+      <td><%= task.title %></td>
+      <td><%= link_to '編集', edit_task_path(task) ,class: 'btn btn-success' %></td>
+      <td><%= link_to '削除', task_path(task), method: :delete, class: 'btn btn-danger' %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
