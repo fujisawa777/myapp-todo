@@ -1,6 +1,7 @@
 # 予約Todoアプリ
  
 美容師時代に予約の管理が大変だったので、簡単に操作できる予約Todoアプリを作成しました。
+タスクの登録、編集、削除機能を実装したシンプルなアプリです。
 
 # DEMO
 ![localhost_3000_tasks](https://user-images.githubusercontent.com/66346129/88950910-4328cf80-d2d0-11ea-98a3-f9aae4046f65.png)
