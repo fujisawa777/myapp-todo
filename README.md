@@ -4,28 +4,26 @@
 作成しました。
 
 # DEMO
+![localhost_3000_tasks](https://user-images.githubusercontent.com/66346129/88950910-4328cf80-d2d0-11ea-98a3-f9aae4046f65.png)
 
-
- 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
  
 # Features
- 
-"hoge"のセールスポイントや差別化などを説明する
+ユーザー目線を考え、アプリが苦手な人でも使いやすいシンプルなTodoアプリにしました。
  
 # Requirement
  
-"hoge"を動かすのに必要なライブラリなどを列挙する
  
-* huga 3.5.2
-* hogehuga 1.0.2
- 
+* ruby 2.6.5
+* rails 6.0.0
+* bootstrap ~> 4.1.1
+* haml-rails
+
 # Installation
  
 Requirementで列挙したライブラリなどのインストール方法を説明する
  
 ```bash
-pip install huga_package
+bundle install
 ```
  
 # Usage
