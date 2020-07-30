@@ -1,0 +1,21 @@
+.header
+
+.indexmain
+  .tasktitle
+    Tasklist
+  .taskarea
+    = link_to 'Creat new task', new_task_path ,class: 'btn btn-info'
+    %table.table
+      %thead
+        %tr
+          %th Task
+          %th Edit
+          %th Delete
+      %tbody
+        - @tasks.each do |task|
+          %tr
+            %td= task.title
+            %td= link_to '編集', edit_task_path(task) ,class: 'btn-success'
+            %td= link_to '削除', task_path(task), method: :delete, class: 'btn-danger'
+
+.footer

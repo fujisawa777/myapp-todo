@@ -1,0 +1,13 @@
+.header
+
+.editmain
+  .edittitle
+    タスク編集
+  .editarea
+    = form_for(@task) do |f|
+      %div= f.label :title
+      %div= f.text_field :title
+      %div= f.submit
+    = link_to '戻る', tasks_path
+
+.footer

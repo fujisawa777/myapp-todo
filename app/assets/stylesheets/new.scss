@@ -1,0 +1,37 @@
+.newtask {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url(coffee-1276784_1920.jpg);
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  .formarea {
+    
+    .new_task {
+      margin-bottom: 30px;
+      .addtitle {
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .form {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 30px;
+      }
+      .btn-success {
+        height: 35px;
+        background-color: #3CCACE;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn-success:hover {
+        background: whitesmoke;
+        color: #3CCACE;
+      }
+      
+    }
+  }
+}

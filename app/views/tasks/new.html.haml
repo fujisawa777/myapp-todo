@@ -1,0 +1,18 @@
+.header
+
+.newtask
+  .addtitle
+    Creat new task
+  - if @task.errors.any?
+    .alert.alert-warning
+      %ul
+        - @task.errors.full_messages.each do |message|
+          %li= message
+  .formarea
+    = form_for(@task) do |f|
+      %div= f.text_field :title, class:"form"
+      %div
+        %input.btn-success{:type => "submit", :value => "タスク追加"}/
+    = link_to '戻る', tasks_path, class: "back"
+
+.footer
