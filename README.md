@@ -4,7 +4,10 @@
 タスクの登録、編集、削除機能を実装したシンプルなアプリです。
 
 # DEMO
-![localhost_3000_tasks](https://user-images.githubusercontent.com/66346129/88950910-4328cf80-d2d0-11ea-98a3-f9aae4046f65.png)
+![localhost_3000_tasks](<img width="1440" alt="スクリーンショット 2020-07-31 17 32 18" src="https://user-images.githubusercontent.com/66346129/89029379-48862880-d369-11ea-865c-02bdd6066c3e.png">
+<img width="1440" alt="スクリーンショット 2020-07-31 17 32 53" src="https://user-images.githubusercontent.com/66346129/89029392-4f14a000-d369-11ea-8e9e-f69cc94f7de8.png">
+<img width="1440" alt="スクリーンショット 2020-07-31 17 33 43" src="https://user-images.githubusercontent.com/66346129/89029476-81260200-d369-11ea-8a12-d2d1f1779592.png">
+)
 
  
 # Features
