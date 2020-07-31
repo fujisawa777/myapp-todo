@@ -1,7 +1,7 @@
 .header
 
 .newtask
-  .addtitle
+  %h1.addtitle
     Creat new task
   - if @task.errors.any?
     .alert.alert-warning
@@ -10,8 +10,9 @@
           %li= message
   .formarea
     = form_for(@task) do |f|
-      %div= f.text_field :title, class:"form"
+      %div= f.text_field :title, class:"form", placeholder: "Taskを入力してください"
       %div
+        %input.date{:type => "date"}/
         %input.btn-success{:type => "submit", :value => "タスク追加"}/
     = link_to '戻る', tasks_path, class: "back"
 

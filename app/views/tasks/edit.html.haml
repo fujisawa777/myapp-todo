@@ -2,12 +2,12 @@
 
 .editmain
   .edittitle
-    タスク編集
+    Edit task
   .editarea
     = form_for(@task) do |f|
-      %div= f.label :title
-      %div= f.text_field :title
-      %div= f.submit
-    = link_to '戻る', tasks_path
+      %div= f.label :edit, class: "editsubtitle"
+      %div= f.text_field :title, class: "taskedit"
+      %div= f.submit class: "editsubmit"
+    = link_to '戻る', tasks_path, class: "back"
 
 .footer

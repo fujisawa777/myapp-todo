@@ -3,11 +3,72 @@
   width: 100vw;
   font-size: 20px;
   background-image: url(coffee-1276784_1920.jpg);
-  background-color:rgba(255,255,255,0.4);
+  background-color:rgba(255,255,255,0.5);
   background-blend-mode:lighten;
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 30px;
   .edittitle {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
+  }
+  .editarea {
+    padding: 20px 0;
+    .editsubtitle {
+      opacity: 0.8;
+    }
+    .taskedit {
+      width: 350px;
+      height: 40px;
+      margin-bottom: 30px;
+      text-align: left;
+      font-size: 18px;
+      margin-top: 30px;
+      border-radius: 5px;
+    }
+    .editsubmit {
+      height: 35px;
+      background-color: #3CCACE;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0.8;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .editsubmit:hover {
+      background: whitesmoke;
+      color: #3CCACE;
+    }
+  
+    .back {
+      background-color: #3CCACE;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      opacity: 0.8;
+      font-size: 18px;
+      border-style: outset;
+      border-width: 2px;
+      border-color: grey; 
+      height: 80px;
+      appearance: button;
+      user-select: none;
+      white-space: pre;
+      text-align: center;
+      width: 50px;
+      height: 37px;
+      cursor: pointer;
+      border-style: outset;
+      border-width: 1px;
+      border-style: outset;
+      border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+      border-image: initial;
+      opacity: 0.8;
+    }
+    .back:hover {
+      background: whitesmoke;
+      color: #3CCACE;
+    }
   }
 }
