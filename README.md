@@ -22,10 +22,16 @@
 # Usage
  
 ```bash
+ローカル環境
 git clone https://github.com/fujisawa777/myapp-todo
 cd myapp-todo
 bundle install
 rails s
+
+本番環境
+https://fujiapp-todo.herokuapp.com/tasks
+
+※環境によって動作が違う場合がございます。
 ```
  
 # Author
