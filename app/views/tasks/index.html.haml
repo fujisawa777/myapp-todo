@@ -1,5 +1,11 @@
 .header
-
+  - if user_signed_in?
+    .userlogout
+      = link_to "ログアウト", destroy_user_session_path, method: :delete
+  - else
+    .userlogin
+      = link_to "ログイン", new_user_session_path, class: "post"
+      = link_to "新規登録", new_user_registration_path, class: "post"
 .indexmain
   .tasktitle
     Tasklist
@@ -19,7 +25,7 @@
               %td= link_to '編集', edit_task_path(task) ,class: 'btn-success'
               %td= link_to '削除', task_path(task), method: :delete, class: 'btn-danger'
     .calender
-      %iframe{:frameborder => "0", :height => "500", :scrolling => "no", :src => "https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=NTloOWdqMWdpbWRnNnVoYW5vZmNna2s2azhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%237CB342&showPrint=0&showTz=0", :style => "border-width:0", :width => "450"}
+      %iframe{:frameborder => "0", :height => "450", :scrolling => "no", :src => "https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=NTloOWdqMWdpbWRnNnVoYW5vZmNna2s2azhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%237CB342&showPrint=0&showTz=0", :style => "border-width:0", :width => "450"}
 
 
 .footer
