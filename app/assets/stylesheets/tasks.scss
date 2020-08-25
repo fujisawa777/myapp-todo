@@ -2,6 +2,70 @@
   height: (100vh - 90vh);
   width: 100vw;
   background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+  
+  .userlogout {
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 20px;
+    a {
+      text-decoration: none;
+      justify-content: center;
+      background-color: white;
+      color: #3CCACE;
+      width: 150px;
+      text-align: center;
+      border-radius: 5px;
+      appearance: push-button;
+      user-select: none;
+      white-space: pre;
+      
+      opacity: 0.8;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 20px;
+      box-sizing: border-box;
+      padding: 1px 6px;
+      border-width: 1px;
+      border-style: outset;
+      border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+      border-image: initial;
+    }
+    a:hover {
+      background: #3CCACE;
+      color: whitesmoke;
+    }
+  }
+  .userlogin {
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 20px;
+    .post {
+      text-decoration: none;
+      justify-content: center;
+      background-color: white;
+      color: #3CCACE;
+      width: 150px;
+      text-align: center;
+      border-radius: 5px;
+      appearance: push-button;
+      user-select: none;
+      white-space: pre;
+      opacity: 0.8;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 20px;
+      box-sizing: border-box;
+      padding: 1px 10px;
+      border-width: 1px;
+      border-style: outset;
+      border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+      border-image: initial;
+    }
+    .post:hover {
+      background: #3CCACE;
+      color: whitesmoke;
+    }
+  }
 }
 
 .indexmain {
@@ -26,7 +90,7 @@
   }
   .taskmain {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     .taskarea {
       height: 70vh;
